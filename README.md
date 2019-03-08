@@ -12,6 +12,7 @@
 5. create superuser following https://docs.djangoproject.com/en/1.8/intro/tutorial02/
 6. migrate database using 'python manage.php migrate'
 7. After successful migration execute `python manage.py runserver`
+8. Go to address http://127.0.0.1:8000/Todo
 8. enjoy
 9. For any information kindly mail me at 'rahman1507001@stud.kuet.ac.bd'
 
