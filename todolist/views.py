@@ -25,7 +25,7 @@ def index(request):
         sent_from = 'todoappasif@gmail.com'
 
         message = MIMEMultipart("alternative")
-        message["Subject"] = title
+        message["Subject"] = title + " is about to start"
         message["From"] = gmail_user
         message["To"] = email
         text = content
