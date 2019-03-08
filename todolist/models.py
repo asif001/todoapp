@@ -13,9 +13,12 @@ class Category(models.Model): # The Category table name that inherits models.Mod
 
 class TodoList(models.Model): #Todolist able name that inherits models.Model
     title = models.CharField(max_length=250) # a varchar
+    email = models.CharField(max_length=250)
     content = models.TextField(blank=True) # a text field 
     created = models.DateField(default=timezone.now().strftime("%Y-%m-%d")) # a date
+    created_time = models.TimeField(default=timezone.now().strftime("%H:%M")) # a date
     due_date = models.DateField(default=timezone.now().strftime("%Y-%m-%d")) # a date
+    due_time = models.TimeField(default=timezone.now().strftime("%H:%M")) # a date
     category = models.ForeignKey(Category, on_delete=models.CASCADE) # a foreignkey
 
     class Meta:

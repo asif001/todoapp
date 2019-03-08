@@ -67,7 +67,7 @@ h1 {
 .inputContainer.half.last.right {
     border-left: 1px solid #efefef;
 }
-input[type="date"], input[type="text"], select {
+input[type="datetime-local"], input[type="text"], select {
     height: 100%;
     width: 100%;
     padding: 0 20px;
@@ -86,10 +86,10 @@ input[type="date"], input[type="text"], select {
     -webkit-transition: background 0.3s;
             transition: background 0.3s;
 }
-input[type="date"] {
+input[type="datetime-local"] {
     cursor: pointer;
 }
-input[type="date"]:focus, input[type="text"]:focus, select:focus {
+input[type="datetime-local"]:focus, input[type="text"]:focus, select:focus {
     outline: none;
     background: #ecf0f1;
 }

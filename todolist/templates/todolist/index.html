@@ -13,7 +13,7 @@
     <div class="container">
             <div class="content">
             <h1>TodoApp</h1>
-            <p class="tagline" style="margin-top: 3px;">a Django todo app</p>
+            <p class="tagline" style="margin-top: 2px;">a Django todo app</p>
             <form action="" method="post">
             {% csrf_token %} <!-- csrf token for basic security -->
                 <div class="inputContainer">
@@ -31,8 +31,12 @@
                     <label for="category">Category</label>
                 </div>
                 <div class="inputContainer half last right">
-                    <input type="date" id="dueDate" class="taskDate" name="date">
+                    <input type="datetime-local" id="dueDate" class="taskDate" name="date">
                     <label for="dueDate">Due Date</label>
+                </div>
+                <div class="inputContainer half last right">
+                    <input type="text" id="email" class="taskName" placeholder="Please enter email for notification" name="email">
+                    <label for="email">Email</label>
                 </div>
                 <div class="row">
                     <button class="taskAdd" name="taskAdd" type="submit"><i class="fa fa-plus icon"></i>Add task</button>
@@ -45,7 +49,7 @@
                     <label for="{{ todo.id }}"><span class="complete-">{{ todo.title }}</span></label>
                     <button class="category-{{ todo.category }}" name="taskUpdate" formnovalidate="" id="{{ todo.id }}" value="{{ todo.id }}" style="height: 36px;background: red">Update</button>
                     <span class="category-{{ todo.category }}">{{ todo.category }}</span>
-                    <strong class="taskDate"><i class="fa fa-calendar"></i>{{ todo.created }} - {{ todo.due_date }}</strong>
+                    <strong class="taskDate"><i class="fa fa-calendar"></i>{{ todo.created }},{{ todo.created_time }} - {{ todo.due_date }},{{ todo.due_time }}</strong>
                 </li>
             {% endfor %}
             </ul><!-- taskList -->

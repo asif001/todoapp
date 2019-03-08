@@ -35,8 +35,12 @@
                     <label for="category">Category</label>
                 </div>
                 <div class="inputContainer half last right">
-                    <input type="date" id="dueDate" class="taskDate" name="date">
+                    <input type="datetime-local" id="dueDate" class="taskDate" name="date">
                     <label for="dueDate">Due Date</label>
+                </div>
+                <div class="inputContainer half last right">
+                    <input type="text" id="email" class="taskName" placeholder="Please enter email for notification" name="email" value="{{ todo.email }}">
+                    <label for="email">Email</label>
                 </div>
                 <div class="row">
                     <button class="taskDelete" name="taskUpdated" formnovalidate="" type="submit" value="{{ todo.id }}">Update Task</button>
