@@ -1,0 +1,4 @@
+Django
+smtp
+apscheduler
+psycopg2
