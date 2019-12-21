@@ -25,3 +25,15 @@ In this project,I designed an django based app for todo list.Here anyone can add
 * Delete task
 * Update task
 * Mail system at the time of schedule
+
+## Contributing
+The main reason to publish something open source, is that anyone can just jump in and start contributing to my project.
+So If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+
+## Author
+Asifur Rahman
+asifurarahman@gmail.com
+Student at Department of Computer Science and Engineering
+Khulna University of Engineering & Technology, Khulna
+Bangladesh
